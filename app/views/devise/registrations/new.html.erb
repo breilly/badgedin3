@@ -1,38 +1,75 @@
 <% content_for :head do %>
   <%= tag :meta, :name => "stripe-key", :content => STRIPE_PUBLIC_KEY %>
 <% end %>
-<h2>Sign up</h2>
-<div id="stripe_error" class="alert alert-error" style="display:none" >
-</div>
-<%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => {:class => 'card_form form-vertical' }) do |f| %>
-  <h3><%= params[:plan].titleize if params[:plan] %> Subscription Plan</h3>
-  <%= hidden_field_tag 'plan', params[:plan] %>
-  <%= f.error_notification %>
-  <%= display_base_errors resource %>
-  <%= f.input :name, :autofocus => true %> 
-  <%= f.input :email, :required => true %>
-  <%= f.input :password, :required => true %>
-  <%= f.input :password_confirmation, :required => true %>
-  <% if @user.stripe_token %>
-    <p>Credit card acceptance is pending.</p>
-  <% else %>
-    <div class="field">
-      <%= label_tag :card_number, "Credit Card Number" %>
-      <%= text_field_tag :card_number, nil, name: nil %>
-    </div>
-    <div class="field">
-      <%= label_tag :card_code, "Card Security Code (CVV)" %>
-      <%= text_field_tag :card_code, nil, name: nil %>
-    </div>
-    <div class="field">
-      <%= label_tag :card_month, "Card Expiration" %>
-      <%= select_month nil, {add_month_numbers: true}, {name: nil, id: "card_month"}%>
-      <%= select_year nil, {start_year: Date.today.year, end_year: Date.today.year+10}, {name: nil, id: "card_year"}%>
-    </div>
-    <div class="field">
-      <%= f.input :coupon, :label => 'Promotional Coupon (if any)' %>
-    </div>
+<div class="span4 well">
+  <h2>Sign up</h2>
+  <div id="stripe_error" class="alert alert-error" style="display:none" >
+  </div>
+  <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => {:class => 'card_form form-vertical' }) do |f| %>
+    <legend><%= params[:plan].titleize if params[:plan] %> Membership Plan</legend>
+    <%= hidden_field_tag 'plan', params[:plan] %>
+    <%= f.error_notification %>
+    <%= display_base_errors resource %>
+    <%= f.input :name, :autofocus => true, :input_html => { :class => "span4" } %> 
+    <%= f.input :email, :required => true, :input_html => { :class => "span4" } %>
+    <%= f.input :password, :required => true , :input_html => { :class => "span4" }%>
+    <%= f.input :password_confirmation, :required => true, :input_html => { :class => "span4" } %>
+    <% if @user.stripe_token %>
+      <p>Credit card acceptance is pending.</p>
+    <% else %>
+      <div class="field">
+        <%= label_tag :card_number, "Credit Card Number" %>
+        <%= text_field_tag :card_number, nil, name: nil, class: "span4" %>
+      </div>
+      <div class="field">
+        <%= label_tag :card_code, "Card Security Code (CVV)" %>
+        <%= text_field_tag :card_code, nil, name: nil %>
+      </div>
+      <div class="field">
+        <%= label_tag :card_month, "Card Expiration" %>
+        <%= select_month nil, {add_month_numbers: true}, {name: nil, id: "card_month"}%>
+        <%= select_year nil, {start_year: Date.today.year, end_year: Date.today.year+10}, {name: nil, id: "card_year"}%>
+      </div>
+      <div class="field">
+        <%= f.input :coupon, :label => 'Promotional Coupon (if any)' %>
+      </div>
+    <% end %>
+    <%= f.hidden_field :stripe_token %>
+    <%= f.button :submit, 'Sign up', class: "pull-right" %>
   <% end %>
-  <%= f.hidden_field :stripe_token %>
-  <%= f.button :submit, 'Sign up', :class => 'btn-primary' %>
-<% end %>
+</div>
+
+<div class="span7">
+  <h2>Join BadgedIn</h2>
+  <p>We're here to help you understand online marketing and grow your business.  Even if you 
+  have no idea what you're doing right now, we can help.  Take your time and learn what you want at your own 
+  pace.</p>
+  <hr>
+  <h4>Badges</h4>
+  <div class="row">
+    <div class="span2">
+      <p class="lead" align="center"><%= image_tag("https://s3.amazonaws.com/badgedin/badges/ppc_badge3150.png") %>PPC</p>
+    </div>
+    <div class="span2">
+      <p class="lead" align="center"><%= image_tag("https://s3.amazonaws.com/badgedin/badges/social_media_badge150.png") %>Social</p>
+    </div>
+    <div class="span2">
+      <p class="lead" align="center"><%= image_tag("https://s3.amazonaws.com/badgedin/badges/seo_badge3150.png") %>SEO</p>
+    </div>
+  </div>
+  <hr>
+  <h4>Learn from experts</h4>
+  <p>Each of our trainers have experience in the area they are teaching on. You'll learn 
+  from people who earn a living doing what they're teaching you.</p>
+  <h4>24/7 access</h4>
+  <p>Access your videos whenever you want, wherever you want. As long as you have an internet 
+  connection, you can learn more about digital marketing.</p>
+  <h4>New videos each month</h4>
+  <p>We continue to provide you with the newest information about digital marketing. Each 
+  month we'll release new videos so you can learn more.</h4>
+  <h4>Unlimited videos</h4>
+  <p>You have access to all the videos. There is no upgrading to view certain videos. Access 
+  any video anytime.</p>
+  <h4>No contract</h4>
+  <p>Feel free to use BadgedIn whenever you want. We don't require a contract to sign up.</p>
+</div>

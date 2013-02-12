@@ -1,30 +1,88 @@
-<div id="welcome" class="hero-unit span7">
-  <h1>Membership Site</h1>
-  <h3>Learn to build a successful subscription site.</h3>
+<div class="row hero-unit">
+  <div class="span5">
+    <h1 class="lead" align="center">Online Marketing. Simplified.</h1>
+    <h3 class="lead" align="center">Learn to market and advertise your website.</h3>
+    <p align="center"><%= link_to 'View the library', library_path, class: 'btn-custom2' %></p>
+  </div>
+  <div class="span7"
+    <p align="center"><%= image_tag("https://s3.amazonaws.com/badgedin/images/hp_overview2600.png") %></p>
+  </div>
 </div>
-<div class="row span8 plans">
-  <div class="span2 well">
-    <div class="plan"><h2>Silver</h2></div>
-    <ul class="unstyled">
-      <li>One lesson a month</li>
-    </ul>
-    <h3>$9/month</h3>
-    <%= link_to 'Subscribe', new_user_registration_path(:plan => 'silver'), :class => 'btn btn-primary' %> 
-  </div>
-  <div class="span2 well featured">
-    <div class="plan featured-plan"><h2>Gold</h2></div>
-    <ul class="unstyled">
-      <li>Ten lessons a month</li>
-    </ul>
-    <h3>$19/month</h3>
-    <%= link_to 'Subscribe', new_user_registration_path(:plan => 'gold'), :class => 'btn btn-primary' %> 
-  </div>
-  <div class="span2 well">
-    <div class="plan"><h2>Platinum</h2></div>
-    <ul class="unstyled">
-      <li>Thirty lessons a month</li>
-    </ul>
-    <h3>$29/month</h3>
-    <%= link_to 'Subscribe', new_user_registration_path(:plan => 'platinum'), :class => 'btn btn-primary' %> 
+	  
+<div class="container">
+  <div class="content">
+	<div class="row">
+      <div class="span12">
+		<ul class="nav nav-tabs">
+		  <li class="active"><a href="#tab1" data-toggle="tab"><%= image_tag("https://s3.amazonaws.com/badgedin/badges/ppc_badge3150.png") %></a><p class="lead">PPC</p></li>
+		  <li><a href="#tab2" data-toggle="tab"><%= image_tag("https://s3.amazonaws.com/badgedin/badges/social_media_badge150.png") %></a><p class="lead">Social</p></li>
+		  <li><a href="#tab3" data-toggle="tab"><%= image_tag("https://s3.amazonaws.com/badgedin/badges/seo_badge3150.png") %></a><p class="lead">SEO</p></li>
+		</ul>
+		<div class="tab-content">
+		  <div class="tab-pane active" id="tab1">
+		    <h2 align="center">Pay Per Click</h2>
+		      <div class="span3 hpspan">
+			    <h3 align="center">Learn the basics</h3>
+			    <p align="center"><%= image_tag("https://s3.amazonaws.com/badgedin/images/ppc_basics100.png") %></p>
+			    <p>We'll take you from zero to knowing what PPC can do for your business.</p>
+			  </div>
+			  <div class="span3">
+			    <h3 align="center">Create a strategy</h3>
+			    <p align="center"><%= image_tag("https://s3.amazonaws.com/badgedin/images/ppc_strategy100.png") %></p>
+			    <p>Once you know the basics you can begin planning how PPC will help you.</p>
+			  </div>
+			  <div class="span3">
+			    <h3 align="center">Build your campaign</h3>
+			    <p align="center"><%= image_tag("https://s3.amazonaws.com/badgedin/images/ppc_build100.png") %></p>
+			    <p>With the basics and strategy in place it's time to create your PPC campaign.</p>
+			  </div>
+		  </div>
+		  <div class="tab-pane" id="tab2">
+		    <h2 align="center">Social Media</h2>
+			  <div class="span3 hpspan">
+			    <h3 align="center">Learn the basics</h3>
+			    <p align="center"><%= image_tag("https://s3.amazonaws.com/badgedin/images/social_basics100.png") %></p>			    
+			    <p>We'll take you from zero to knowing what Social Media can do for your business.</p>
+			  </div>
+			  <div class="span3">
+			    <h3 align="center">Create a strategy</h3>
+			      <p align="center"><%= image_tag("https://s3.amazonaws.com/badgedin/images/social_strategy100.png") %></p>
+			    <p>Once you know the basics you can begin planning how Social Media will help you.</p>
+			  </div>
+			  <div class="span3">
+			    <h3 align="center">Share your business</h3>
+			    <p align="center"><%= image_tag("https://s3.amazonaws.com/badgedin/images/social_social100.png") %></p>
+			    <p>With the basics and strategy in place it's time to use Social Media.</p>
+			  </div>
+		  </div>
+		  <div class="tab-pane" id="tab3">
+		    <h2 align="center">Search Engine Optimization</h2>
+		      <div class="span3 hpspan">
+			    <h3 align="center">Learn the basics</h3>
+			    <p align="center"><%= image_tag("https://s3.amazonaws.com/badgedin/images/seo_basics100.png") %></p>
+			    <p>We'll take you from zero to knowing what SEO can do for your website.</p>
+			  </div>
+			  <div class="span3">
+			    <h3 align="center">Create a strategy</h3>
+			    <p align="center"><%= image_tag("https://s3.amazonaws.com/badgedin/images/seo_strategy100.png") %></p>
+			    <p>Once you know the basics you can begin planning how SEO will help you.</p>
+			  </div>
+			  <div class="span3">
+			    <h3 align="center">Optimize your site</h3>
+			    <p align="center"><%= image_tag("https://s3.amazonaws.com/badgedin/images/seo_optimize100.png") %></p>
+			    <p>With the basics and strategy in place it's time to use SEO tactics.</p>
+			  </div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="span12">
+	    <br />
+	    <br />
+		<h2 align="center"><%= link_to 'Start your free trial', plans_path, class: 'btn-custom3' %></h2>
+		<br />
+	  </div>
+	</div>
   </div>
 </div>

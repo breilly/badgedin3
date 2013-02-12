@@ -1,13 +1,14 @@
-<%= link_to "Rails Stripe Membership Saas", root_path, :class => 'brand' %>
-<ul class="nav">
+<%= link_to image_tag("https://s3.amazonaws.com/badgedin/images/badge_head50.png", class: 'brand'), root_path %>
+<%= link_to "BadgedIn", root_path, :class => 'brand' %>
+<ul class="nav pull-right">
   <% if user_signed_in? %>
     <li>
     <%= link_to 'Logout', destroy_user_session_path, :method=>'delete' %>        
     </li>
   <% else %>
-    <li>
-    <%= link_to 'Login', new_user_session_path %>  
-    </li>
+    <li><%= link_to 'Library', library_path %></li>
+    <li><%= link_to 'Sign in', new_user_session_path %></li>
+    <li><%= link_to 'Start your free trial', plans_path, class: 'btn-custom' %></li>
   <% end %>
   <% if user_signed_in? %>
     <li>

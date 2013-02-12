@@ -11,3 +11,212 @@
  *= require_self
  *= require_tree .
 */
+
+.btn-custom { 
+  background-color: #6EBE7C !important; 
+  background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6EBE7C", endColorstr="#6EBE7C"); 
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#6EBE7C), to(#6EBE7C)); 
+  background-image: -moz-linear-gradient(top, #6EBE7C, #6EBE7C); 
+  background-image: -ms-linear-gradient(top, #6EBE7C, #6EBE7C); 
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6EBE7C), color-stop(100%, #6EBE7C)); 
+  background-image: -webkit-linear-gradient(top, #6EBE7C, #6EBE7C); 
+  background-image: -o-linear-gradient(top, #6EBE7C, #6EBE7C); 
+  background-image: linear-gradient(#6EBE7C, #6EBE7C); 
+  border-color: #6EBE7C #6EBE7C hsl(70, 75%, 44%); 
+  color: #fff !important; 
+  padding: 7px 10px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.00); 
+  -webkit-font-smoothing: antialiased; 
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.btn-custom2 { 
+  background-color: #BE2327 !important; 
+  background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#BE2327", endColorstr="#BE2327"); 
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#BE2327), to(#BE2327)); 
+  background-image: -moz-linear-gradient(top, #BE2327, #BE2327); 
+  background-image: -ms-linear-gradient(top, #BE2327, #BE2327); 
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #BE2327), color-stop(100%, #BE2327)); 
+  background-image: -webkit-linear-gradient(top, #BE2327, #BE2327); 
+  background-image: -o-linear-gradient(top, #BE2327, #BE2327); 
+  background-image: linear-gradient(#BE2327, #BE2327); 
+  border-color: #BE2327 #BE2327 hsl(70, 75%, 44%); 
+  color: #fff !important; 
+  padding: 7px 10px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.00); 
+  -webkit-font-smoothing: antialiased; 
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.btn-custom3 { 
+  background-color: #6EBE7C !important; 
+  background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6EBE7C", endColorstr="#6EBE7C"); 
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#6EBE7C), to(#6EBE7C)); 
+  background-image: -moz-linear-gradient(top, #6EBE7C, #6EBE7C); 
+  background-image: -ms-linear-gradient(top, #6EBE7C, #6EBE7C); 
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6EBE7C), color-stop(100%, #6EBE7C)); 
+  background-image: -webkit-linear-gradient(top, #6EBE7C, #6EBE7C); 
+  background-image: -o-linear-gradient(top, #6EBE7C, #6EBE7C); 
+  background-image: linear-gradient(#6EBE7C, #6EBE7C); 
+  border-color: #6EBE7C #6EBE7C hsl(70, 75%, 44%); 
+  color: #fff !important; 
+  padding: 17px 20px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.00); 
+  -webkit-font-smoothing: antialiased; 
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.footer {
+  position: relative;
+  height: 150px;
+  clear:both;
+  padding-top:20px;
+  background-color: #fff;
+} 
+
+.footer-text {
+
+  a {
+    color: #999999;
+  }
+  
+  a:hover {
+    color: #454546;
+  }
+}
+
+.modal#login-Modal {
+  width: 400px;
+  margin-left: -200px;
+}
+
+.modal-body {
+  background-color: #99cccc;
+}
+
+.modal-footer {
+
+  a {
+    color: #999999;
+  }
+}
+
+.well {
+
+  a {
+    color: #999999;
+  }
+  
+  a:hover {
+    color: #454546;
+  }
+}
+
+.span12-price {
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-bottom: 4%;
+  padding-top: 4%;
+  *zoom: 1;
+}
+
+.well2 {
+  min-height: 20px;
+  padding: 19px 0 0 0;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+
+.well2-bodysilver {
+  position: relative;
+  padding: 15px;
+  overflow-y: auto;
+  background-color: #cccccc;
+}
+
+.well2-bodygold {
+  position: relative;
+  padding: 15px;
+  overflow-y: auto;
+  background-color: #e6dea3;
+}
+
+.well2-bodyplatinum {
+  position: relative;
+  padding: 15px;
+  overflow-y: auto;
+  background-color: #acb5c4;
+}
+
+
+.well2-footer {
+  padding: 14px 15px 15px;
+  margin-bottom: 0;
+  text-align: right;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  -webkit-border-radius: 0 0 6px 6px;
+     -moz-border-radius: 0 0 6px 6px;
+          border-radius: 0 0 6px 6px;
+  *zoom: 1;
+  -webkit-box-shadow: inset 0 1px 0 #ffffff;
+     -moz-box-shadow: inset 0 1px 0 #ffffff;
+          box-shadow: inset 0 1px 0 #ffffff;
+          
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    opacity: 0.7;
+    filter:alpha(opacity=70); /* For IE8 and earlier */
+  }
+  
+  h3 {
+    text-align: right;
+  }
+}
+
+.well-library {
+  min-height: 20px;
+  padding: 19px 0 19px 0;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+          
+  a {
+    color: #8fc7c9;
+  }
+  
+  a:hover {
+    color: #3d4b54;
+    text-decoration: none;
+  }
+}
+
+.span1-library {
+  width: 150px;
+  padding-left: 5%;
+}

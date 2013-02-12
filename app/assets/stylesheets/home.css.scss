@@ -1,3 +1,76 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.hero-unit { 
+  background-color: #99cccc; 
+  color: #fff;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+    filter:alpha(opacity=70); /* For IE8 and earlier */
+  }
+}
+
+.primary-content {
+  background-color: #8B9EB4;
+  color: #fff;
+}
+
+.nav-tabs > li, .nav-pills > li {
+    float:none;
+    display:inline-block;
+    *display: inline;     /* for IE7*/
+    *zoom:1;              /* for IE7*/
+    padding: 0 3%;
+}
+
+.span12 {
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+    filter:alpha(opacity=70); /* For IE8 and earlier */
+  }
+}
+.nav-tabs > li > a:hover {
+    background-color: #dceded;
+    border-color: #dceded;
+}
+
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover {
+  color: #555555;
+  cursor: default;
+  background-color: #dceded;
+  border: 1px solid #dceded;
+  border-bottom-color: transparent;
+}
+
+.nav-tabs {
+    text-align:center;
+}
+
+.tab-content {
+    float:none;
+    display:inline-block;
+    *display: inline;     /* for IE7*/
+    *zoom:1;              /* for IE7*/
+    padding-left: 13%;
+}
+
+.hpspan {
+  margin-left: 0;
+}

@@ -3,6 +3,12 @@ Badgedin3::Application.routes.draw do
   get "content/gold"
   get "content/silver"
   get "content/platinum"
+  
+  match "/plans", to: "plans#index"
+  match "/library", to: "library#index"
+  match "/privacy", to: "legal#privacy"
+  match "/terms", to: "legal#terms"
+  
   authenticated :user do
     root :to => 'home#index'
   end

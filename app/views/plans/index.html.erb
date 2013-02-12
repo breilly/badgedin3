@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="content">
+  <div class="page-header">
+    <h1 align="center">Monthly Membership Plans</h1>
+  </div>
+
+<div class="row span12-price">
+  <div class="span3 well2">
+    <div class="plan"></div>
+      <div class="plan-header"><h2>Silver</h2></div>
+        <div class="well2-bodysilver">
+    	  <ul class="unstyled">
+      		<li><strong>Videos</strong> - Learn the basics</li>
+      		<hr>
+      		<li><strong>Walk throughs</strong> - Specific tutorials</li>
+      		<br />
+      		<br />
+      		<br />
+    	  </ul>
+    	</div>
+      <div class="well2-footer">
+    	<h3>$29 <%= link_to 'Sign up', new_user_registration_path(:plan => 'silver'), :class => 'btn-custom' %></h3>
+      </div>
+  </div>
+  <div class="span3 well2 featured">
+    <div class="plan featured-plan"></div>
+      <div class="plan-header"><h2>Gold</h2></div>
+        <div class="well2-bodygold">
+    	  <ul class="unstyled">
+      		<li><strong>All Silver included</strong></li>
+      		<hr>
+      		<li><strong>+ Starter kit</strong> - Guide for beginners</li>
+      		<hr>
+      		<li><strong>+ Strategy sessions</strong> - Blueprints</li>
+    	  </ul>
+    	</div>
+    	<div class="well2-footer">
+    	  <h3>$49 <%= link_to 'Sign up', new_user_registration_path(:plan => 'gold'), :class => 'btn-custom' %></h3>
+    	</div>
+  </div>
+  <div class="span3 well2">
+    <div class="plan"></div>
+      <div class="plan-header"><h2>Platinum</h2></div>
+        <div class="well2-bodyplatinum">
+    	  <ul class="unstyled">
+      		<li><strong>All Gold included</strong></li>
+      		<hr>
+      		<li><strong>+ Plan feedback</strong> - Get reviews</li>
+      		<hr>
+      		<li><strong>+ Expert access</strong> - Ask questions</li>
+    	  </ul>
+    	</div>
+    	<div class="well2-footer">
+    	  <h3>$79 <%= link_to 'Sign up', new_user_registration_path(:plan => 'platinum'), :class => 'btn-custom' %></h3>
+    	</div>
+  </div>
+</div>
+
+</div>
+</div>

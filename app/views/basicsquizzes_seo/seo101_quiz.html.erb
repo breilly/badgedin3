@@ -1,0 +1,253 @@
+<div class="container">
+  <div class="content">
+  
+  <%= image_tag("https://s3.amazonaws.com/badgedin/badges/SEO+101+Badge.png", alt: "SEO 101 badge", align: "center", id: "quiz_badge") %>
+    
+    <div class="row-video">
+    <div class="span7-video">
+        <ul class="breadcrumb">
+  		  <li><a href="#">SEO Basics</a> <span class="divider">/</span></li>
+  		  <li><a href="#">SEO 101</a> <span class="divider">/</span></li>
+  		  <li class="active">Quiz</li>
+		</ul>
+    <div class="questionContainer radius">
+        <div class="question"><b>Question 1:</b> What type of SEO should you avoid altogether?</div>
+        <div class="answers">
+            <ul>
+            	<hr>
+                <li>
+                    <label><input type="radio" name="q1" id="q1-a" /> White hat.</label>
+                </li>
+                <hr>
+                <li>
+                    <label><input type="radio" name="q1" id="q1-b" /> Black glove.</label>
+                </li>
+                <hr>
+                <li>
+                    <label><input type="radio" name="q1" id="q1-c" /> Black hat.</label>
+                </li>
+                <hr>
+                <li>
+                    <label><input type="radio" name="q1" id="q1-d" /> White glove.</label>
+                </li>
+            </ul>
+        </div>
+        <div class="btnContainer pull-right">
+                <div class="prev"></div>
+                <div class="next">
+                    <a class="btnNext">Next</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+    </div>
+    <div class="questionContainer hide radius">
+        <div class="question"><b>Question 2:</b> What's another name for on-site SEO?</div>
+        <div class="answers">
+            <ul>
+            	<hr>
+                <li>
+                    <label><input type="radio" name="q2" id="q2-a" /> Off-site.</label>
+                </li>
+                <hr>
+                <li>
+                    <label><input type="radio" name="q2" id="q2-b" /> On-click.</label>
+                </li>
+                <hr>
+                <li>
+                    <label><input type="radio" name="q2" id="q2-c" /> Off-click.</label>
+                </li>
+                <hr>
+                <li>
+                    <label><input type="radio" name="q2" id="q2-d" /> On-page.</label>
+                </li>
+            </ul>
+        </div>
+        <div class="btnContainer pull-right">
+                <div class="prev">
+                </div>
+                <div class="next">
+                    <a class="btnNext">Next</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+    </div>
+    <div class="questionContainer radius hide">
+        <div class="question"><b>Question 3:</b> Which type of SEO is better?</div>
+        <div class="answers">
+            <ul>
+            	<hr>
+                <li>
+                    <label><input type="radio" name="q3" id="q3-a" /> On-site.</label>
+                </li>
+                <hr>
+                <li>
+                    <label><input type="radio" name="q3" id="q3-b" /> Off-site.</label>
+                </li>
+                <hr>
+                <li>
+                    <label><input type="radio" name="q3" id="q3-c" /> You don't need either silly.</label>
+                </li>
+                <hr>
+                <li>
+                	<label><input type="radio" name="q3" id="q3-d" /> You need both silly.</label>
+                </li>
+            </ul>
+        </div>
+        <div class="btnContainer pull-right">
+                <div class="prev">
+                </div>
+                <div class="next">
+                    <a class="btnNext">Next</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+    </div>
+    <div class="questionContainer radius hide">
+        <div class="question"><b>Question 4:</b> What does CMS stand for?</div>
+        <div class="answers">
+            <ul>
+            	<hr>
+                <li>
+                    <label><input type="radio" name="q4" id="q4-a" /> Content Management System.</label>
+                </li>
+                <hr>
+                <li>
+                    <label><input type="radio" name="q4" id="q4-b" /> Creative Management System.</label>
+                </li>
+                <hr>
+                <li>
+                    <label><input type="radio" name="q4" id="q4-c" /> Content Messaging System.</label>
+                </li>
+                <hr>
+                <li>
+                	<label><input type="radio" name="q4" id="q4-d" /> Creative Messaging System.</label>
+                </li>
+            </ul>
+        </div>
+        <div class="btnContainer pull-right">
+                <div class="prev">
+                </div>
+                <div class="next">
+                    <a class="btnNext">Next</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+    </div>
+    <div class="questionContainer radius hide">
+        <div class="question"><b>Question 5:</b> Both Ruby on Rails and CMS have ________ that help with SEO.</div>
+        <div class="answers">
+            <ul>
+            	<hr>
+                <li>
+                    <label><input type="radio" name="q5" id="q5-a" /> Plugs.</label>
+                </li>
+                <hr>
+                <li>
+                    <label><input type="radio" name="q5" id="q5-b" /> Pluggers.</label>
+                </li>
+                <hr>
+                <li>
+                    <label><input type="radio" name="q5" id="q5-c" /> Plugins.</label>
+                </li>
+                <hr>
+                <li>
+                    <label><input type="radio" name="q5" id="q5-d" /> Pluggings.</label>
+                </li>
+            </ul>
+        </div>
+        <div class="btnContainer pull-right">
+            <div class="prev">
+            </div>
+            <div class="next">
+                <a class="btnShowResult">Finish!</a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    </div>
+    
+    <div class="span3-video">
+    <div class="txtStatusBar">Quiz Status</div>
+    <div id="progressKeeper" class="radius">
+        <div id="progress" class="radius"></div>
+    </div>
+    <div id="resultKeeper" class="radius hide"></div>
+    </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+$(function(){
+    var jQuiz = {
+        answers: { q1: 'c', q2: 'd', q3: 'd', q4: 'a', q5: 'c' },
+        questionLenght: 5,
+        checkAnswers: function() {
+            var arr = this.answers;
+            var ans = this.userAnswers;
+            var resultArr = []
+            for (var p in ans) {
+                var x = parseInt(p) + 1;
+                var key = 'q' + x;
+                var flag = false;
+                if (ans[p] == 'q' + x + '-' + arr[key]) {
+                    flag = true;
+                }
+                else {
+                    flag = false;
+                }
+                resultArr.push(flag);
+            }
+            return resultArr;
+        },
+        init: function(){
+            $('.btnNext').click(function(){
+                if ($('input[type=radio]:checked:visible').length == 0) {
+                            
+                    return false;
+                }
+                $(this).parents('.questionContainer').fadeOut(300, function(){
+                    $(this).next().fadeIn(300);
+                });
+                var el = $('#progress');
+                el.width(el.width() + 60 + 'px');
+            });
+            $('.btnPrev').click(function(){
+                $(this).parents('.questionContainer').fadeOut(300, function(){
+                    $(this).prev().fadeIn(300)
+                });
+                var el = $('#progress');
+                el.width(el.width() - 60 + 'px');
+            })
+            $('.btnShowResult').click(function(){
+                var arr = $('input[type=radio]:checked');
+                var ans = jQuiz.userAnswers = [];
+                for (var i = 0, ii = arr.length; i < ii; i++) {
+                    ans.push(arr[i].getAttribute('id'))
+                }
+            })
+            $('.btnShowResult').click(function(){
+                $('#progress').width(300);
+                $('#progressKeeper').hide();
+                var results = jQuiz.checkAnswers();
+                var resultSet = '';
+                var trueCount = 0;
+                for (var i = 0, ii = results.length; i < ii; i++){
+                    if (results[i] == true) trueCount++;
+                    resultSet += '<div> Question ' + (i + 1) + ' is ' + results[i] + '</div>'
+                }
+                resultSet += '<div class="totalScore">Your total score is ' + trueCount * 20 + ' / 100</div>'
+                if (trueCount == 5) {
+                  resultSet += '<br /><a href="/basics_seo/seo101/badge" class="btn-custom">Claim badge</a>'
+                }
+                else {
+				  resultSet += '<br /><a href="/basics_seo/seo101/quiz" class="btn-custom2">Try again</a>'
+                };
+                $('#resultKeeper').html(resultSet).show();
+            })
+        }
+    };
+    jQuiz.init();
+})
+</script>

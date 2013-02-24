@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="content">
+    <script type="text/javascript">
+	  var playerhost = (("https:" == document.location.protocol) ? "https://badgedin.s3.amazonaws.com/ezs3js/secure/" : "http://badgedin.s3.amazonaws.com/ezs3js/player/");
+	  document.write(unescape("%3Cscript src='" + playerhost + "flv/EB00848E-D4AE-52BC-EDCDB1836A8BE2D6.js?t="+(Math.random() * 99999999)+"' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    
+    <div class="row-video">
+    <div class="span7-video">
+      
+        <ul class="breadcrumb">
+  		  <li><a href="/basics_social">Social Media Basics</a> <span class="divider">/</span></li>
+  		  <li><a href="/basics_social/fb_timeline/part1">Timeline</a> <span class="divider">/</span></li>
+  		  <li class="active">Part 3</li>
+		</ul>
+      
+ 	  <p class="trainer">Author: Kelly Mirabella | Time: 2 minutes 28 seconds</p>
+ 	  <p class="trainer">Understanding how the Timeline works on your Facebook business page 
+ 	  gives you more room to use your creativity.  Watch this video to find out how.</p>
+	  <hr>
+	  <%= link_to image_tag("https://s3.amazonaws.com/badgedin/images/play_button.png", alt: "Play", id: "play", align: "left"), basics_social_fb_timeline_part1_path %><h4>Timeline - part 1</h4>
+	  <strong><%= link_to 'Watch', basics_social_fb_timeline_part1_path, class: 'btn-custom pull-right' %></strong>
+	  <p class="muted">3 minutes 9 seconds</p>
+	  <hr>
+	  <%= link_to image_tag("https://s3.amazonaws.com/badgedin/images/play_button.png", alt: "Play", id: "play", align: "left"), basics_social_fb_timeline_part2_path %><h4>Timeline - part 2</h4>
+	  <strong><%= link_to 'Watch', basics_social_fb_timeline_part2_path, class: 'btn-custom pull-right' %></strong>
+	  <p class="muted">4 minutes 24 seconds</p>
+	  <hr>
+	  <%= link_to image_tag("https://s3.amazonaws.com/badgedin/images/play_button.png", alt: "Play", id: "play", align: "left"), basics_social_fb_timeline_part3_path %><h4>Timeline - part 3</h4>
+	  <strong><%= link_to 'Watch', basics_social_fb_timeline_part3_path, class: 'btn-custom pull-right' %></strong>
+	  <p class="muted">2 minutes 28 seconds</p>
+	  <hr>
+	  <p></p>
+    </div>
+    
+    <div class="span3-video">
+      <%= image_tag("https://s3.amazonaws.com/badgedin/badges/Facebook+Timeline+Badge.png", alt: "Facebook Timeline badge", align: "center", id: "badge_img") %>
+      <hr>
+  	  <h3 align="center"><%= link_to 'Take the quiz', basics_social_fb_timeline_quiz_path, class: 'btn-custom' %></h3>
+    </div>
+    </div>
+    
+  </div>
+</div>

@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="content">
+    <script type="text/javascript">
+	  var playerhost = (("https:" == document.location.protocol) ? "https://badgedin.s3.amazonaws.com/ezs3js/secure/" : "http://badgedin.s3.amazonaws.com/ezs3js/player/");
+	  document.write(unescape("%3Cscript src='" + playerhost + "flv/5671183C-D4AE-52BC-EDCDB57CD09733F7.js?t="+(Math.random() * 99999999)+"' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    
+    <div class="row-video">
+    <div class="span7-video">
+      
+        <ul class="breadcrumb">
+  		  <li><a href="/basics_seo">SEO Basics</a> <span class="divider">/</span></li>
+  		  <li><a href="/basics_seo/seo101/intro_to_seo">SEO 101</a> <span class="divider">/</span></li>
+  		  <li class="active">Intro to SEO</li>
+		</ul>
+      
+ 	  <p class="trainer">Author: Angela Yost | Time: 2 minutes 23 seconds</p>
+ 	  <p class="trainer">What are the benefits of showing up in an organic search listing vs. a 
+ 	  PPC search listing?  Watch this video to find out.</p>
+	  <hr>
+	  <%= link_to image_tag("https://s3.amazonaws.com/badgedin/images/play_button.png", alt: "Play", id: "play", align: "left"), basics_seo_seo101_intro_to_seo_path %><h4>Introduction</h4>
+	  <strong><%= link_to 'Watch', basics_seo_seo101_intro_to_seo_path, class: 'btn-custom pull-right' %></strong>
+	  <p class="muted">2 minutes 23 seconds</p>
+	  <hr>
+	  <%= link_to image_tag("https://s3.amazonaws.com/badgedin/images/play_button.png", alt: "Play", id: "play", align: "left"), basics_seo_seo101_onsite_offsite_path %><h4>On-site vs. Off-site</h4>
+	  <strong><%= link_to 'Watch', basics_seo_seo101_onsite_offsite_path, class: 'btn-custom pull-right' %></strong>
+	  <p class="muted">2 minutes 37 seconds</p>
+	  <hr>
+	  <%= link_to image_tag("https://s3.amazonaws.com/badgedin/images/play_button.png", alt: "Play", id: "play", align: "left"), basics_seo_seo101_websites_path %><h4>Create an SEO Friendly Website</h4>
+	  <strong><%= link_to 'Watch', basics_seo_seo101_websites_path, class: 'btn-custom pull-right' %></strong>
+	  <p class="muted">3 minutes 45 seconds</p>
+	  <hr>
+	  <p></p>
+    </div>
+    
+    <div class="span3-video">
+      <%= image_tag("https://s3.amazonaws.com/badgedin/badges/SEO+101+Badge.png", alt: "SEO 101 badge", align: "center", id: "badge_img") %>
+      <hr>
+  	  <h3 align="center"><%= link_to 'Take the quiz', basics_seo_seo101_quiz_path, class: 'btn-custom' %></h3>
+    </div>
+    </div>
+    
+  </div>
+</div>

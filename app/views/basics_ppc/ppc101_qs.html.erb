@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="content">
+    <script type="text/javascript">
+	  var playerhost = (("https:" == document.location.protocol) ? "https://badgedin.s3.amazonaws.com/ezs3js/secure/" : "http://badgedin.s3.amazonaws.com/ezs3js/player/");
+	  document.write(unescape("%3Cscript src='" + playerhost + "flv/DD5CE4E5-D4AE-52BC-EDCD41E56B69D3D1.js?t="+(Math.random() * 99999999)+"' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    
+    <div class="row-video">
+    <div class="span7-video">
+      
+        <ul class="breadcrumb">
+  		  <li><a href="/basics_ppc">PPC Basics</a> <span class="divider">/</span></li>
+  		  <li><a href="#">PPC 101</a> <span class="divider">/</span></li>
+  		  <li class="active">Quality Score</li>
+		</ul>
+      
+ 	  <p class="trainer">Author: Steve Trujillo | Time: 2 minutes 6 seconds</p>
+ 	  <p class="trainer">In this video, we'll learn what pay per click ads are and how companies use them to benefit 
+       their online advertising campaigns.</p>
+	  <hr>
+	  <%= link_to image_tag("https://s3.amazonaws.com/badgedin/images/play_button.png", alt: "Play", id: "play", align: "left"), basics_ppc_PPC_101_intro_to_ppc_path %><h4>Intro to PPC</h4>
+	  <strong><%= link_to 'Watch', basics_ppc_PPC_101_intro_to_ppc_path, class: 'btn-custom pull-right' %></strong>
+	  <p class="muted">2 minutes 24 seconds</p>
+	  <hr>
+	  <%= link_to image_tag("https://s3.amazonaws.com/badgedin/images/play_button.png", alt: "Play", id: "play", align: "left"), basics_ppc_PPC_101_quality_score_path %><h4>Quality Score</h4>
+	  <strong><%= link_to 'Watch', basics_ppc_PPC_101_quality_score_path, class: 'btn-custom pull-right' %></strong>
+	  <p class="muted">2 minutes 6 seconds</p>
+	  <hr>
+	  <%= link_to image_tag("https://s3.amazonaws.com/badgedin/images/play_button.png", alt: "Play", id: "play", align: "left"), basics_ppc_PPC_101_google_quatlity_score_path %><h4>Quality Score Google</h4>
+	  <strong><%= link_to 'Watch', basics_ppc_PPC_101_google_quatlity_score_path, class: 'btn-custom pull-right' %></strong>
+	  <p class="muted">1 minute 33 seconds</p>
+	  <hr>
+	  <%= link_to image_tag("https://s3.amazonaws.com/badgedin/images/play_button.png", alt: "Play", id: "play", align: "left"), basics_ppc_PPC_101_rankings_path %><h4>Rankings</h4>
+	  <strong><%= link_to 'Watch', basics_ppc_PPC_101_rankings_path, class: 'btn-custom pull-right' %></strong>
+	  <p class="muted">1 minute 33 seconds</p>
+	  <hr>
+	  <%= link_to image_tag("https://s3.amazonaws.com/badgedin/images/play_button.png", alt: "Play", id: "play", align: "left"), basics_ppc_PPC_101_bids_path %><h4>Bids</h4>
+	  <strong><%= link_to 'Watch', basics_ppc_PPC_101_bids_path, class: 'btn-custom pull-right' %></strong>
+	  <p class="muted">1 minute 22 seconds</p>
+	  <hr>
+	  <p></p>
+    </div>
+    
+    <div class="span3-video">
+      <%= image_tag("https://s3.amazonaws.com/badgedin/badges/PPC+101+Badge.png", alt: "PPC 101 badge", align: "center", id: "badge_img") %>
+      <hr>
+  	  <h3 align="center"><%= link_to 'Take the quiz', basics_ppc_PPC_101_quiz_path, class: 'btn-custom' %></h3>
+    </div>
+    </div>
+    
+  </div>
+</div>

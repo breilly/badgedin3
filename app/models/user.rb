@@ -11,6 +11,7 @@ class User < ActiveRecord::Base
   attr_accessor :stripe_token, :coupon
   before_save :update_stripe
   before_destroy :cancel_subscription
+  has_many :badges, dependent: :destroy
 
   def update_plan(role)
     self.role_ids = []

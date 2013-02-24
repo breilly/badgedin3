@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="content">
+    <script type="text/javascript">
+	  var playerhost = (("https:" == document.location.protocol) ? "https://badgedin.s3.amazonaws.com/ezs3js/secure/" : "http://badgedin.s3.amazonaws.com/ezs3js/player/");
+	  document.write(unescape("%3Cscript src='" + playerhost + "flv/E4F92E88-D4AE-52BC-EDCD704B8B2DCE88.js?t="+(Math.random() * 99999999)+"' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    
+    <div class="row-video">
+    <div class="span7-video">
+      
+        <ul class="breadcrumb">
+  		  <li><a href="/basics_seo">SEO Basics</a> <span class="divider">/</span></li>
+  		  <li><a href="/basics_seo/onsite/freshness">On-site</a> <span class="divider">/</span></li>
+  		  <li class="active">Freshness</li>
+		</ul>
+      
+ 	  <p class="trainer">Author: Ben Reilly | Time: 2 minutes 12 seconds</p>
+ 	  <p class="trainer">What are some ways you can keep your website relevant?  Watch this video to find out.</p>
+	  <hr>
+	  <%= link_to image_tag("https://s3.amazonaws.com/badgedin/images/play_button.png", alt: "Play", id: "play", align: "left"), basics_seo_onsite_freshness_path %><h4>Freshness</h4>
+	  <strong><%= link_to 'Watch', basics_seo_onsite_freshness_path, class: 'btn-custom pull-right' %></strong>
+	  <p class="muted">2 minutes 12 seconds</p>
+	  <hr>
+	  <%= link_to image_tag("https://s3.amazonaws.com/badgedin/images/play_button.png", alt: "Play", id: "play", align: "left"), basics_seo_onsite_keywords_path %><h4>Keywords</h4>
+	  <strong><%= link_to 'Watch', basics_seo_onsite_keywords_path, class: 'btn-custom pull-right' %></strong>
+	  <p class="muted">3 minutes 14 seconds</p>
+	  <hr>
+	  <%= link_to image_tag("https://s3.amazonaws.com/badgedin/images/play_button.png", alt: "Play", id: "play", align: "left"), basics_seo_onsite_links_path %><h4>Links</h4>
+	  <strong><%= link_to 'Watch', basics_seo_onsite_links_path, class: 'btn-custom pull-right' %></strong>
+	  <p class="muted">2 minutes 38 seconds</p>
+	  <hr>
+	  <%= link_to image_tag("https://s3.amazonaws.com/badgedin/images/play_button.png", alt: "Play", id: "play", align: "left"), basics_seo_onsite_meta_and_title_tags_path %><h4>Meta & Title Tags</h4>
+	  <strong><%= link_to 'Watch', basics_seo_onsite_meta_and_title_tags_path, class: 'btn-custom pull-right' %></strong>
+	  <p class="muted">2 minutes 41 seconds</p>
+	  <hr>
+	  <%= link_to image_tag("https://s3.amazonaws.com/badgedin/images/play_button.png", alt: "Play", id: "play", align: "left"), basics_seo_onsite_sitemap_path %><h4>Sitemap</h4>
+	  <strong><%= link_to 'Watch', basics_seo_onsite_sitemap_path, class: 'btn-custom pull-right' %></strong>
+	  <p class="muted">1 minute 57 seconds</p>
+	  <hr>
+	  <p></p>
+    </div>
+    
+    <div class="span3-video">
+      <%= image_tag("https://s3.amazonaws.com/badgedin/badges/onsite_badge.png", alt: "On-site badge", align: "center", id: "badge_img") %>
+      <hr>
+  	  <h3 align="center"><%= link_to 'Take the quiz', basics_seo_onsite_quiz_path, class: 'btn-custom' %></h3>
+    </div>
+    </div>
+    
+  </div>
+</div>

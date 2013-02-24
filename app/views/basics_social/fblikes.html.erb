@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="content">
+    <script type="text/javascript">
+	  var playerhost = (("https:" == document.location.protocol) ? "https://badgedin.s3.amazonaws.com/ezs3js/secure/" : "http://badgedin.s3.amazonaws.com/ezs3js/player/");
+	  document.write(unescape("%3Cscript src='" + playerhost + "flv/59C7C7B5-D4AE-52BC-EDCDC63FAEA957C3.js?t="+(Math.random() * 99999999)+"' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    
+    <div class="row-video">
+    <div class="span7-video">
+      
+        <ul class="breadcrumb">
+  		  <li><a href="/basics_social">Social Media Basics</a> <span class="divider">/</span></li>
+  		  <li><a href="/basics_social/fb_likes/part1">Likes</a> <span class="divider">/</span></li>
+  		  <li class="active">Part 1</li>
+		</ul>
+      
+ 	  <p class="trainer">Author: Kelly Mirabella | Time: 3 minutes 6 seconds</p>
+ 	  <p class="trainer">Using ads can be an effective way of increasing your fan page likes.  
+ 	  In this video, we'll show you some options to do this.</p>
+	  <hr>
+	  <%= link_to image_tag("https://s3.amazonaws.com/badgedin/images/play_button.png", alt: "Play", id: "play", align: "left"), basics_social_fb_likes_part1_path %><h4>Facebook Likes - part 1</h4>
+	  <strong><%= link_to 'Watch', basics_social_fb_likes_part1_path, class: 'btn-custom pull-right' %></strong>
+	  <p class="muted">3 minutes 6 seconds</p>
+	  <hr>
+	  <%= link_to image_tag("https://s3.amazonaws.com/badgedin/images/play_button.png", alt: "Play", id: "play", align: "left"), basics_social_fb_likes_part2_path %><h4>Facebook Likes - part 2</h4>
+	  <strong><%= link_to 'Watch', basics_social_fb_likes_part2_path, class: 'btn-custom pull-right' %></strong>
+	  <p class="muted">2 minutes 30 seconds</p>
+	  <hr>
+	  <%= link_to image_tag("https://s3.amazonaws.com/badgedin/images/play_button.png", alt: "Play", id: "play", align: "left"), basics_social_fb_likes_part3_path %><h4>Facebook Likes - part 3</h4>
+	  <strong><%= link_to 'Watch', basics_social_fb_likes_part3_path, class: 'btn-custom pull-right' %></strong>
+	  <p class="muted">2 minutes 13 seconds</p>
+	  <hr>
+	  <p></p>
+    </div>
+    
+    <div class="span3-video">
+      <%= image_tag("https://s3.amazonaws.com/badgedin/badges/fb_likes_badge.png", alt: "Facebook Likes badge", align: "center", id: "badge_img") %>
+      <hr>
+  	  <h3 align="center"><%= link_to 'Take the quiz', basics_social_fb_likes_quiz_path, class: 'btn-custom' %></h3>
+    </div>
+    </div>
+    
+  </div>
+</div>

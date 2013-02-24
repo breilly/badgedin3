@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="content">
+    <div class="page-header">
+      <h1><%= current_user.name %>'s Badges</h1>
+    </div>
+
+    <div class="row">
+      <% if @badges.any? %>
+	    <% @badges.each do |badge| %>
+  	    <div class="span3">
+    	  <%= image_tag(badge.badge_url, id: "badge") %>
+    	  <p class="lead" align="center"><%= badge.badge_name %></p>
+    	  <p align="center">Earned <%= time_ago_in_words(badge.created_at) %> ago.</p>
+  	    </div>
+	    <% end %>
+	  <% else %>
+	    <h3 align="center">No badges yet.  Head over to the library to earn some.</h3>
+	  <% end %>
+	</div>
+
+
+  </div>
+</div>

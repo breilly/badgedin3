@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="content">
+    <script type="text/javascript">
+	  var playerhost = (("https:" == document.location.protocol) ? "https://badgedin.s3.amazonaws.com/ezs3js/secure/" : "http://badgedin.s3.amazonaws.com/ezs3js/player/");
+	  document.write(unescape("%3Cscript src='" + playerhost + "flv/7A05C2EC-D4AE-52BC-EDCD94936A6AC18D.js?t="+(Math.random() * 99999999)+"' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    
+    <div class="row-video">
+    <div class="span7-video">
+      
+        <ul class="breadcrumb">
+  		  <li><a href="/basics_ppc">PPC Basics</a> <span class="divider">/</span></li>
+  		  <li><a href="#">Tracking & Reporting</a> <span class="divider">/</span></li>
+  		  <li class="active">Reports</li>
+		</ul>
+      
+ 	  <p class="trainer">Author: Ben Reilly | Time: 2 minutes 19 seconds</p>
+ 	  <p class="trainer">There are lots of PPC reporting systems out there.  In this video
+ 	  we'll talk about the major types of reports you may want to use.</p>
+	  <hr>
+	  <%= link_to image_tag("https://s3.amazonaws.com/badgedin/images/play_button.png", alt: "Play", id: "play", align: "left"), basics_ppc_tracking_and_reporting_tracking_path %><h4>Tracking</h4>
+	  <strong><%= link_to 'Watch', basics_ppc_tracking_and_reporting_tracking_path, class: 'btn-custom pull-right' %></strong>
+	  <p class="muted">3 minutes 7 seconds</p>
+	  <hr>
+	  <%= link_to image_tag("https://s3.amazonaws.com/badgedin/images/play_button.png", alt: "Play", id: "play", align: "left"), basics_ppc_tracking_and_reporting_reporting_path %><h4>Reports</h4>
+	  <strong><%= link_to 'Watch', basics_ppc_tracking_and_reporting_reporting_path, class: 'btn-custom pull-right' %></strong>
+	  <p class="muted">2 minutes 19 seconds</p>
+	  <hr>
+	  <%= link_to image_tag("https://s3.amazonaws.com/badgedin/images/play_button.png", alt: "Play", id: "play", align: "left"), basics_ppc_tracking_and_reporting_metrics_path %><h4>Metrics</h4>
+	  <strong><%= link_to 'Watch', basics_ppc_tracking_and_reporting_metrics_path, class: 'btn-custom pull-right' %></strong>
+	  <p class="muted">2 minutes 37 seconds</p>
+	  <hr>
+	  <p></p>
+    </div>
+    
+    <div class="span3-video">
+      <%= image_tag("https://s3.amazonaws.com/badgedin/badges/tracking_badge.png", alt: "Tracking & Reporting badge", align: "center", id: "badge_img") %>
+      <hr>
+  	  <h3 align="center"><%= link_to 'Take the quiz', basics_ppc_tracking_and_reporting_quiz_path, class: 'btn-custom' %></h3>
+    </div>
+    </div>
+    
+  </div>
+</div>

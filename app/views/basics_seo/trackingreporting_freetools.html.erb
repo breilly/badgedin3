@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="content">
+    <script type="text/javascript">
+	  var playerhost = (("https:" == document.location.protocol) ? "https://badgedin.s3.amazonaws.com/ezs3js/secure/" : "http://badgedin.s3.amazonaws.com/ezs3js/player/");
+	  document.write(unescape("%3Cscript src='" + playerhost + "flv/92D7F7A5-D4AE-52BC-EDCD2A5E716DCBD6.js?t="+(Math.random() * 99999999)+"' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    
+    <div class="row-video">
+    <div class="span7-video">
+      
+        <ul class="breadcrumb">
+  		  <li><a href="/basics_seo">SEO Basics</a> <span class="divider">/</span></li>
+  		  <li><a href="/basics_seo/tracking_and_reporting/reports">Tracking & Reporting</a> <span class="divider">/</span></li>
+  		  <li class="active">Free Tools</li>
+		</ul>
+      
+ 	  <p class="trainer">Author: Ben Reilly | Time: 1 minute 59 seconds</p>
+ 	  <p class="trainer">There are lot's of tools out there that will tell you how your website is performing.  
+ 	  In this video we'll show you some free options.</p>
+	  <hr>
+	  <%= link_to image_tag("https://s3.amazonaws.com/badgedin/images/play_button.png", alt: "Play", id: "play", align: "left"), basics_seo_tracking_and_reporting_reports_path %><h4>Reports</h4>
+	  <strong><%= link_to 'Watch', basics_seo_tracking_and_reporting_reports_path, class: 'btn-custom pull-right' %></strong>
+	  <p class="muted">3 minutes 5 seconds</p>
+	  <hr>
+	  <%= link_to image_tag("https://s3.amazonaws.com/badgedin/images/play_button.png", alt: "Play", id: "play", align: "left"), basics_seo_tracking_and_reporting_metrics_path %><h4>Metrics</h4>
+	  <strong><%= link_to 'Watch', basics_seo_tracking_and_reporting_metrics_path, class: 'btn-custom pull-right' %></strong>
+	  <p class="muted">2 minutes 47 seconds</p>
+	  <hr>
+	  <%= link_to image_tag("https://s3.amazonaws.com/badgedin/images/play_button.png", alt: "Play", id: "play", align: "left"), basics_seo_tracking_and_reporting_free_tools_path %><h4>Free Tools</h4>
+	  <strong><%= link_to 'Watch', basics_seo_tracking_and_reporting_free_tools_path, class: 'btn-custom pull-right' %></strong>
+	  <p class="muted">1 minute 59 seconds</p>
+	  <hr>
+	  <%= link_to image_tag("https://s3.amazonaws.com/badgedin/images/play_button.png", alt: "Play", id: "play", align: "left"), basics_seo_tracking_and_reporting_paid_tools_path %><h4>Paid Tools</h4>
+	  <strong><%= link_to 'Watch', basics_seo_tracking_and_reporting_paid_tools_path, class: 'btn-custom pull-right' %></strong>
+	  <p class="muted">2 minutes 8 seconds</p>
+	  <hr>
+	  <p></p>
+    </div>
+    
+    <div class="span3-video">
+      <%= image_tag("https://s3.amazonaws.com/badgedin/badges/seo_tracking_badge.png", alt: "Tracking & Reporting badge", align: "center", id: "badge_img") %>
+      <hr>
+  	  <h3 align="center"><%= link_to 'Take the quiz', basics_seo_tracking_and_reporting_quiz_path, class: 'btn-custom' %></h3>
+    </div>
+    </div>
+    
+  </div>
+</div>

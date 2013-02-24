@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="content">
+    <script type="text/javascript">
+	  var playerhost = (("https:" == document.location.protocol) ? "https://badgedin.s3.amazonaws.com/ezs3js/secure/" : "http://badgedin.s3.amazonaws.com/ezs3js/player/");
+	  document.write(unescape("%3Cscript src='" + playerhost + "flv/C7D28CBE-D4AE-52BC-EDCD56BA0D27B701.js?t="+(Math.random() * 99999999)+"' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    
+    <div class="row-video">
+    <div class="span7-video">
+      
+        <ul class="breadcrumb">
+  		  <li><a href="/basics_social">Social Media Basics</a> <span class="divider">/</span></li>
+  		  <li><a href="/basics_social/fb_admin/basics">Facebook Admin Panel</a> <span class="divider">/</span></li>
+  		  <li class="active">Basics</li>
+		</ul>
+      
+ 	  <p class="trainer">Author: Kelly Mirabella | Time: 3 minutes 19 seconds</p>
+ 	  <p class="trainer">You can get a quick view of how your Facebook page is performing by 
+ 	  looking at the basic admin panel.  Let's take a look.</p>
+	  <hr>
+	  <%= link_to image_tag("https://s3.amazonaws.com/badgedin/images/play_button.png", alt: "Play", id: "play", align: "left"), basics_social_fb_admin_basics_path %><h4>Basic Admin Panel</h4>
+	  <strong><%= link_to 'Watch', basics_social_fb_admin_basics_path, class: 'btn-custom pull-right' %></strong>
+	  <p class="muted">3 minutes 19 seconds</p>
+	  <hr>
+	  <%= link_to image_tag("https://s3.amazonaws.com/badgedin/images/play_button.png", alt: "Play", id: "play", align: "left"), basics_social_fb_admin_complete_path %><h4>Complete Admin Panel</h4>
+	  <strong><%= link_to 'Watch', basics_social_fb_admin_complete_path, class: 'btn-custom pull-right' %></strong>
+	  <p class="muted">5 minutes 5 seconds</p>
+	  <hr>
+	  <p></p>
+    </div>
+    
+    <div class="span3-video">
+      <%= image_tag("https://s3.amazonaws.com/badgedin/badges/Facebook+Admin+Panel+Badge.png", alt: "Facebook Admin Panel badge", align: "center", id: "badge_img") %>
+      <hr>
+  	  <h3 align="center"><%= link_to 'Take the quiz', basics_social_fb_admin_quiz_path, class: 'btn-custom' %></h3>
+    </div>
+    </div>
+    
+  </div>
+</div>

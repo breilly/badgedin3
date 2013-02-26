@@ -6,7 +6,7 @@
     <%= f.input :focus, placeholder: 'On-site', label: 'On-site or Off-site?', :input_html => { :class => "span4" } %>
     <%= f.input :budget, placeholder: '$250', label: 'Monthly budget', :input_html => { :class => "span4" } %>
     <%= f.input :goal, placeholder: 'To increase monthly unique visits by 1000.', label: 'Goal of SEO campaign', input_html: { :class => "span4" } %>
-    <%= f.input :steps, placeholder: 'Pay someone to build inbound links...', label: "What's your plan?", input_html: { :class => "span4" } %>
+    <%= f.input :steps, as: :text, placeholder: 'Pay someone to build inbound links...', label: "What's your plan?", input_html: { rows: 4, :class => "span4" } %>
     <%= f.input :timeline, placeholder: '3 months', :input_html => { :class => "span4" } %>
     <%= f.input :keywords, placeholder: 'keyword1, keyword2, keyword3...', label: 'Target keywords', input_html: { :class => "span4" } %>
     <%= f.input :email, as: 'hidden', input_html: { value: @user } %>

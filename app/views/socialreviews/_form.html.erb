@@ -6,7 +6,7 @@
     <%= f.input :network, placeholder: 'Facebook', label: 'Which social network?', :input_html => { :class => "span4" } %>
     <%= f.input :budget, placeholder: '$250', label: 'Monthly budget', :input_html => { :class => "span4" } %>
     <%= f.input :goal, placeholder: 'To add 1000 followers.', label: 'Goal of Social Media campaign', input_html: { :class => "span4" } %>
-    <%= f.input :steps, placeholder: 'Launching a promotional contest...', label: "What's your plan?", input_html: { :class => "span4" } %>
+    <%= f.input :steps, as: :text, placeholder: 'Launching a promotional contest...', label: "What's your plan?", input_html: { rows: 4, :class => "span4" } %>
     <%= f.input :fans, placeholder: '10,000', label: "Number of fans/followers", input_html: { :class => "span4" } %>
     <%= f.input :timeline, placeholder: '3 months', :input_html => { :class => "span4" } %>
     <%= f.input :email, as: 'hidden', input_html: { value: @user } %>

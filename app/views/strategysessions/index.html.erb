@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="content">
+
+  <div class="span4 well">
+  <!-- Begin MailChimp Signup Form -->
+<link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<p class="lead">Strategy sessions are weekly emails to help you think about your marketing and advertising campaigns.</p>
+<p class="lead">We currently use MailChimp for this service.  By clicking the button below you are allowing us to send these emails to you.</p>
+<%= form_tag("http://badgedin.us6.list-manage.com/subscribe/post?u=cbc0b6ce73&amp;id=af3a3f0d84", :method => "post", :id => "mc-embedded-subscribe-form", :name =>"mc-embedded-subscribe-form", :class => "validate", :target => "_blank") do |f| %>
+  <%= hidden_field_tag("EMAIL", @user) %>
+  <%= hidden_field_tag("FNAME", @planner) %>
+  
+  <%= submit_tag "Yes, send to me!", class: "btn", :name => "subscribe", :id => "mc-embedded-subscribe" %>
+<% end %>
+</div>
+
+<!--End mc_embed_signup-->
+  </div>
+
+
+  <div class="span7">
+  <h2>Strategy Sessions</h2>
+  <p>Taking the time to plan out what you are going to do with your campaigns can lead to better performance.  
+  Strategy sessions give you things to think about whether you are just beginning or need something new.</p>
+  <hr>
+  <h4>New sessions weekly</h4>
+  <p>Once you sign up you'll receive weekly emails that help you strategize your marketing and advertising efforts.</p>
+  <h4>Save each session</h4>
+  <p>Since we're using email for the sessions, you can save them for future reference if you need.</p>
+  <h4>Progress from beginner to strategist</h4>
+  <p>The first few sessions will be beginner focused.  As you progress through the sessions, they will become increasingly more 
+  advanced.  You'll be a strategist in no time.</p>
+  <h4>For PPC, Social & SEO</h4>
+  <p>We'll cover PPC, Social Media & SEO.  Some sessions will cover all 3 while others will dive in and focus on a single area.</p>
+  
+</div>
+  </div>
+</div>

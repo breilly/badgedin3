@@ -88,5 +88,7 @@ module Badgedin3
   :authentication       => :plain,
   :enable_starttls_auto => true
 }
+
+	gb = Gibbon.new(ENV["MAILCHIMP_API_KEY"])
   end
 end

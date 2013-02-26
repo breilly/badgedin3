@@ -27,6 +27,7 @@ Badgedin3::Application.routes.draw do
   match "/basics_ppc", to: "library#basics_ppc"
   match "/basics_seo", to: "library#basics_seo"
   match "/basics_social", to: "library#basics_social"
+  match "/strategy_sessions", to: "strategysessions#index"
   match "/privacy", to: "legal#privacy"
   match "/terms", to: "legal#terms"
   match "/about", to: "legal#about"

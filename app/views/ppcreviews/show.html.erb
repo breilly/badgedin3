@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="content">
+<p id="notice"><%= notice %></p>
+
+  <div class="span4 well">
+  <p><strong>Website: </strong><%= @ppcreview.website %></p>
+  <p><strong>Channel: </strong><%= @ppcreview.channel %></p>
+  <p><strong>Monthly Budget: </strong><%= @ppcreview.budget %></p>
+  <p><strong>Campaign Goal: </strong><%= @ppcreview.goal %></p>
+  <p><strong>Timeline: </strong><%= @ppcreview.timeline %></p>
+  <p><strong>Potential Keywords: </strong><%= @ppcreview.keywords %></p>
+
+<p><%= link_to 'Destroy', @ppcreview, method: :delete, data: { confirm: 'Are you sure?' } %> |
+<%= link_to 'Edit', edit_ppcreview_path(@ppcreview) %> |
+<%= link_to 'Back', ppcreviews_path %></p>
+
+<p><strong>Submitted <%= time_tag(@ppcreview.created_at.to_date) %>.</p>
+</div>
+
+</div>
+</div>

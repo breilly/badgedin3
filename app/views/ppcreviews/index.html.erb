@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="content">
+	<div class="page-header">
+      <h1>PPC Plan Reviews
+      <small><%= link_to 'New Review', new_ppcreview_path, class: "btn-custom pull-right" %></small></h1>
+    </div>
+
+
+
+<div class="span11 well">
+<% @ppcreviews.each do |ppcreview| %>
+  <p><%= link_to ppcreview.website, ppcreview %></p>
+  <p>Submitted <%= time_tag(ppcreview.created_at.to_date) %>.</p>
+
+    
+    <%= link_to 'Edit', edit_ppcreview_path(ppcreview) %>
+    <%= link_to 'Destroy', ppcreview, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+<% end %>
+
+</div>
+
+</div>
+</div>
+

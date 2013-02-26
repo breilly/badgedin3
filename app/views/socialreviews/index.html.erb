@@ -1,0 +1,21 @@
+<h1>Listing socialreviews</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @socialreviews.each do |socialreview| %>
+  <tr>
+    <td><%= link_to 'Show', socialreview %></td>
+    <td><%= link_to 'Edit', edit_socialreview_path(socialreview) %></td>
+    <td><%= link_to 'Destroy', socialreview, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Socialreview', new_socialreview_path %>

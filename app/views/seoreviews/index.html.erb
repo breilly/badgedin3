@@ -1,0 +1,21 @@
+<h1>Listing seoreviews</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @seoreviews.each do |seoreview| %>
+  <tr>
+    <td><%= link_to 'Show', seoreview %></td>
+    <td><%= link_to 'Edit', edit_seoreview_path(seoreview) %></td>
+    <td><%= link_to 'Destroy', seoreview, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Seoreview', new_seoreview_path %>

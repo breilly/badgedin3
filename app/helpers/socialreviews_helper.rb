@@ -1,0 +1,2 @@
+module SocialreviewsHelper
+end

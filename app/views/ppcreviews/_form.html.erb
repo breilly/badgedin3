@@ -1,0 +1,20 @@
+<%= simple_form_for(@ppcreview, html: { class: "span4 well" }) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :website, placeholder: 'www.badgedin.com', :input_html => { :class => "span4" } %>
+    <%= f.input :channel, placeholder: 'Google, Bing, etc.', :input_html => { :class => "span4" } %>
+    <%= f.input :budget, placeholder: '$250', label: 'Monthly budget', :input_html => { :class => "span4" } %>
+    <%= f.input :goal, placeholder: 'To increase user sign ups.', label: 'Goal of PPC campaign', input_html: { rows: 4, :class => "span4" } %>
+    <%= f.input :timeline, placeholder: '3 months', :input_html => { :class => "span4" } %>
+    <%= f.input :keywords, placeholder: 'keyword1, keyword2, keyword3...', label: 'Potential keywords', input_html: { rows: 4, :class => "span4" } %>
+    <%= f.input :email, as: 'hidden', input_html: { value: @user } %>
+    <%= f.input :name, as: 'hidden', input_html: { value: @planner } %>
+    <%= f.input :user_id, as: 'hidden', value: @user %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, "Submit plan" %>
+    <%= link_to "Cancel", :back, class: "btn" %>
+  </div>
+<% end %>

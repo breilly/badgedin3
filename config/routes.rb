@@ -1,4 +1,17 @@
 Badgedin3::Application.routes.draw do
+
+  resources :experts
+
+
+  resources :socialreviews
+
+
+  resources :seoreviews
+
+
+  resources :ppcreviews
+
+
   resources :messages
   match "/contact", to: "messages#new"
 
@@ -14,12 +27,6 @@ Badgedin3::Application.routes.draw do
   match "/basics_ppc", to: "library#basics_ppc"
   match "/basics_seo", to: "library#basics_seo"
   match "/basics_social", to: "library#basics_social"
-  match "/walkthroughs_ppc", to: "library#walkthroughs_ppc"
-  match "/walkthroughs_seo", to: "library#walkthroughs_seo"
-  match "/walkthroughs_social", to: "library#walkthroughs_social"
-  match "/walkthroughs_ppc/negative_keywords", to: "walkthroughs_ppc#negative_kws"
-  match "/walkthroughs_seo/wp_all_in_one", to: "walkthroughs_seo#wpallinone"
-  match "/walkthroughs_social/fb_ad_targeting", to: "walkthroughs_social#fbadtargeting"
   match "/privacy", to: "legal#privacy"
   match "/terms", to: "legal#terms"
   match "/about", to: "legal#about"

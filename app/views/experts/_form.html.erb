@@ -1,0 +1,15 @@
+<%= simple_form_for(@expert, html: { class: "span4 well" }) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :question, placeholder: 'Should I use Facebook or Twitter for...', label: 'Your question', input_html: { :class => "span4" } %>
+    <%= f.input :email, as: 'hidden', input_html: { value: @user } %>
+    <%= f.input :name, as: 'hidden', input_html: { value: @planner } %>
+    <%= f.input :user_id, as: 'hidden', value: @user %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, "Ask question" %>
+    <%= link_to "Cancel", :back, class: "btn" %>
+  </div>
+<% end %>

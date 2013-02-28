@@ -12,6 +12,7 @@ class User < ActiveRecord::Base
   before_save :update_stripe
   before_destroy :cancel_subscription
   has_many :badges, dependent: :destroy
+  has_many :starters
 
   def update_plan(role)
     self.role_ids = []

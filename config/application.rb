@@ -75,6 +75,9 @@ module Badgedin3
 
     # Enable the asset pipeline
     config.assets.enabled = true
+    
+    # Heroku requires this to be false
+	config.assets.initialize_on_precompile=false
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
@@ -88,7 +91,5 @@ module Badgedin3
   :authentication       => :plain,
   :enable_starttls_auto => true
 }
-
-	gb = Gibbon.new(ENV["MAILCHIMP_API_KEY"])
   end
 end

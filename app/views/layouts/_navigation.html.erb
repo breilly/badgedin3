@@ -12,6 +12,21 @@
       	<li><%= link_to 'Badges', badges_path %></li>
       	<li><%= link_to "Settings", edit_user_registration_path %></li>
       	<li class="divider"></li>
+      	<li><h4>Silver</h4></li>
+      	<li><%= link_to 'PPC Basics', basics_ppc_path %></li>
+      	<li><%= link_to 'Social Basics', basics_social_path %></li>
+      	<li><%= link_to 'SEO Basics', basics_seo_path %></li>
+      	<li class="divider"></li>
+      	<h4>Gold</h4>
+      	<li><%= link_to 'Starter Kit', starter_path %></li>
+      	<li><%= link_to 'Strategy Sessions', strategy_sessions_path %></li>
+      	<li class="divider"></li>
+      	<h4>Platinum</h4>
+      	<li><%= link_to 'PPC Plan Review', new_ppcreview_path %></li>
+      	<li><%= link_to 'Social Plan Review', new_socialreview_path %></li>
+      	<li><%= link_to 'SEO Plan Review', new_seoreview_path %></li>
+      	<li><%= link_to "Expert Access", new_expert_path %></li>
+      	<li class="divider"></li>
         <li><%= link_to 'Logout', destroy_user_session_path, :method=>'delete' %></li>
   <% else %>
     <li><%= link_to 'Library', library_path %></li>

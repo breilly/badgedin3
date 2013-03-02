@@ -4,6 +4,9 @@ class UsersController < ApplicationController
   def index
     authorize! :index, @user, :message => 'Not authorized as an administrator.'
     @users = User.all
+    set_meta_tags :title => 'Users',
+              :description => 'Admin page.',
+              :noindex => true
   end
 
   def show

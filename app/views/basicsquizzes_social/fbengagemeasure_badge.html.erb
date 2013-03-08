@@ -11,6 +11,48 @@
 
 <h2 align="center">Congrats!  You've earned the Facebook Engagement & Measurement badge!</h2>
 
+	<hr>
+	<p class="lead" align="center">Share your achievement and promote your business!</p>
+    <div class="span4"></div>
+    <div class="span2">
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.badgedin.com" data-text="I just earned the Facebook Engagement &amp; Measurement badge with @badgedin!" data-size="large" data-count="none">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  	</div>
+  
+  	<div class="span2">
+	  <div id="fb-root"></div>
+    	<script src='http://connect.facebook.net/en_US/all.js'></script>
+    	<p><a class="btn btn-primary" onclick='postToFeed(); return false;'>Share on Facebook</a></p>
+    	<p id='msg'></p>
+
+    	<script> 
+      	  FB.init({appId: "139850606160013", status: true, cookie: true});
+
+      	  function postToFeed() {
+
+          // calling the API ...
+          var obj = {
+            method: 'feed',
+            redirect_uri: 'http://www.badgedin.com/basics_social',
+            link: 'http://www.badgedin.com/basics_social/fb_engage_measure/engage',
+            picture: 'https://s3.amazonaws.com/badgedin/badges/Facebook+Engagement+Measurement+Badge.png',
+            name: 'Facebook Engagement & Measurement',
+            caption: '',
+            description: "Our basic videos will teach you more about social media.  Even if you don't know much about it, we'll help you use it to grow your business."
+          };
+
+          function callback(response) {
+            document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
+          }
+
+          FB.ui(obj, callback);
+          }
+    
+        </script>
+      </div>
+      <br />
+	<hr>
+	
 <%= simple_form_for(@badge) do |f| %>
   <%= f.error_notification %>
 
@@ -20,7 +62,7 @@
     <%= f.input :user_id, as: 'hidden', value: @user %>
   </div>
 
-    <h3 align="center"><%= f.button :submit, "Add badge to profile", class: 'btn-success' %></h3>
+    <h3 align="center"><%= f.button :submit, "Add badge to profile", class: 'btn-success btn-large' %></h3>
 
 <% end %>
   </div>

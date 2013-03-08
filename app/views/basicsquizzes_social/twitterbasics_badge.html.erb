@@ -6,22 +6,63 @@
 <div class="container">
   <div class="content">
 
+	<%= image_tag("https://s3.amazonaws.com/badgedin/badges/twitter_basics_badge.png", alt: "Twitter Basics badge", id: "quiz_badge") %>
+
+	<h2 align="center">Congrats!  You've earned the Twitter Basics badge!</h2>
 	
-<%= image_tag("https://s3.amazonaws.com/badgedin/badges/twitter_basics_badge.png", alt: "Twitter Basics badge", id: "quiz_badge") %>
+	<hr>
+	<p class="lead" align="center">Share your achievement and promote your business!</p>
+    <div class="span4"></div>
+    <div class="span2">
+  	  <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.badgedin.com" data-text="I just earned the Twitter Basics badge with @badgedin!" data-size="large" data-count="none">Tweet</a>
+	  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  	</div>
+  
+  	<div class="span2">
+	  <div id="fb-root"></div>
+    	<script src='http://connect.facebook.net/en_US/all.js'></script>
+    	<p><a class="btn btn-primary" onclick='postToFeed(); return false;'>Share on Facebook</a></p>
+    	<p id='msg'></p>
 
-<h2 align="center">Congrats!  You've earned the Twitter Basics badge!</h2>
+    	<script> 
+      	  FB.init({appId: "139850606160013", status: true, cookie: true});
 
-<%= simple_form_for(@badge) do |f| %>
-  <%= f.error_notification %>
+      	  function postToFeed() {
 
-  <div class="form-inputs">
-    <%= f.input :badge_name, as: 'hidden', input_html: { value: 'Twitter Basics' } %>
-    <%= f.input :badge_url, as: 'hidden', input_html: { value: 'https://s3.amazonaws.com/badgedin/badges/twitter_basics_badge.png' } %>
-    <%= f.input :user_id, as: 'hidden', value: @user %>
-  </div>
+          // calling the API ...
+          var obj = {
+            method: 'feed',
+            redirect_uri: 'http://www.badgedin.com/basics_social',
+            link: 'http://www.badgedin.com/basics_social/twitter_basics',
+            picture: 'https://s3.amazonaws.com/badgedin/badges/twitter_basics_badge.png',
+            name: 'Twitter Basics',
+            caption: '',
+            description: "Our basic videos will teach you more about social media.  Even if you don't know much about it, we'll help you use it to grow your business."
+          };
 
-    <h3 align="center"><%= f.button :submit, "Add badge to profile", class: 'btn-success' %></h3>
+          function callback(response) {
+            document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
+          }
 
-<% end %>
+          FB.ui(obj, callback);
+          }
+    
+        </script>
+      </div>
+      <br />
+	<hr>
+	<%= simple_form_for(@badge) do |f| %>
+  	  <%= f.error_notification %>
+
+  	  <div class="form-inputs">
+    	<%= f.input :badge_name, as: 'hidden', input_html: { value: 'Twitter Basics' } %>
+    	<%= f.input :badge_url, as: 'hidden', input_html: { value: 'https://s3.amazonaws.com/badgedin/badges/twitter_basics_badge.png' } %>
+    	<%= f.input :user_id, as: 'hidden', value: @user %>
+  	  </div>
+
+      <h3 align="center"><%= f.button :submit, "Add badge to profile", class: 'btn-success btn-large' %></h3>
+
+	<% end %>
+	
   </div>
 </div>

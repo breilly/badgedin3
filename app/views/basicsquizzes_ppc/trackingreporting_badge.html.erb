@@ -21,35 +21,16 @@
   
   	<div class="span2">
 	  <div id="fb-root"></div>
-    	<script src='http://connect.facebook.net/en_US/all.js'></script>
-    	<p><a class="btn btn-primary" onclick='postToFeed(); return false;'>Share on Facebook</a></p>
-    	<p id='msg'></p>
-
-    	<script> 
-      	  FB.init({appId: "139850606160013", status: true, cookie: true});
-
-      	  function postToFeed() {
-
-          // calling the API ...
-          var obj = {
-            method: 'feed',
-            redirect_uri: 'http://www.badgedin.com/basics_ppc',
-            link: 'http://www.badgedin.com/basics_ppc/tracking_and_reporting/metrics',
-            picture: 'https://s3.amazonaws.com/badgedin/badges/tracking_badge.png',
-            name: 'Tracking & Reporting',
-            caption: '',
-            description: "Our basic videos will teach you more about pay per click.  Even if you don't know much about it, we'll help you use it to grow your business."
-          };
-
-          function callback(response) {
-            document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
-          }
-
-          FB.ui(obj, callback);
-          }
-    
-        </script>
-      </div>
+    	
+    	<p><a href="https://www.facebook.com/dialog/feed?
+  app_id=139850606160013&
+  link=http://www.badgedin.com/basics_ppc/tracking_and_reporting/metrics&
+  picture=https://s3.amazonaws.com/badgedin/badges/tracking_badge.png&
+  name=Tracking and Reporting&
+  caption=&
+  description=Our basic videos will teach you more about pay per click.  Even if you don't know much about it, we'll help you use it to grow your business.&
+  redirect_uri=http://www.badgedin.com/basics_ppc/tracking_and_reporting/badge" target="_blank" class="btn btn-primary">Share on Facebook</a></p>
+    	</div>
       <br />
 	<hr>
 	

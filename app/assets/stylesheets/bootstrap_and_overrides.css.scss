@@ -34,6 +34,30 @@ html,
           padding-right: 20px;
         }
       }
+      
+      @media (max-width: 480px) {
+        h1.lead {
+          font-size: 300%;
+          margin-right: auto;
+          margin-left: auto;
+          text-align: center;
+        }
+        
+        h3.lead {
+          font-size: 100%;
+          text-align: center;
+        }
+        
+        h2 {
+          font-size: 100%;
+        }
+        
+        .tab-content {
+          margin-right: auto;
+          margin-left: auto;
+        }
+      }
+
 .navbar {
   .navbar-inner {
     background-color: #3d4b54;

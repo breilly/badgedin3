@@ -1,0 +1,27 @@
+<% title 'Twitter Basics' %>
+<% description "Our basic videos will teach you more about social media.  Even if you don't know much about it, we'll help you use it to grow your business." %>
+<% keywords 'online marketing, internet marketing, social media, social media business' %>
+<% set_meta_tags :noindex => true %>
+
+<div class="container">
+  <div class="content">
+
+	
+<%= image_tag("https://s3.amazonaws.com/badgedin/badges/twitter_basics_badge.png", alt: "Twitter Basics badge", id: "quiz_badge") %>
+
+<h2 align="center">Congrats!  You've earned the Twitter Basics badge!</h2>
+
+<%= simple_form_for(@badge) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :badge_name, as: 'hidden', input_html: { value: 'Twitter Basics' } %>
+    <%= f.input :badge_url, as: 'hidden', input_html: { value: 'https://s3.amazonaws.com/badgedin/badges/twitter_basics_badge.png' } %>
+    <%= f.input :user_id, as: 'hidden', value: @user %>
+  </div>
+
+    <h3 align="center"><%= f.button :submit, "Add badge to profile", class: 'btn-success' %></h3>
+
+<% end %>
+  </div>
+</div>

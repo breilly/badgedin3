@@ -1,14 +1,14 @@
 <% description 'Start your 30 day free trial today!  BadgedIn is the fastest, easiest way to learn how to market and advertise your website with Social Media, PPC, and SEO.' %>
 <% keywords 'online marketing, internet marketing, pay per click, social media, search engine optimization, ppc, seo' %>
 
-<div class="row-fluid hero-unit">
+<div class="row hero-unit">
   <div class="span5">
     <h1 class="lead" align="center">Online Marketing. Simplified.</h1>
     <h3 class="lead" align="center">Learn to market and advertise your website.</h3>
     <p align="center"><%= link_to 'View the library', library_path, class: 'btn-custom2' %></p>
   </div>
   <div class="span7">
-    <p align="center"><%= image_tag("https://s3.amazonaws.com/badgedin/images/hp_overview2600.png") %></p>
+    <p align="center"><%= image_tag("https://s3.amazonaws.com/badgedin/images/hp_overview2600.png", class:"hidden-phone") %></p>
   </div>
 </div>
 	  
@@ -23,7 +23,7 @@
 		</ul>
 		<div class="tab-content">
 		  <div class="tab-pane active" id="tab1">
-		    <h2 align="center">Pay Per Click</h2>
+		    <h2 align="center" class="hidden-phone">Pay Per Click</h2>
 		      <div class="span3 hpspan">
 			    <h3 align="center">Learn the basics</h3>
 			    <p align="center"><%= image_tag("https://s3.amazonaws.com/badgedin/images/ppc_basics100.png") %></p>
@@ -41,7 +41,7 @@
 			  </div>
 		  </div>
 		  <div class="tab-pane" id="tab2">
-		    <h2 align="center">Social Media</h2>
+		    <h2 align="center" class="hidden-phone">Social Media</h2>
 			  <div class="span3 hpspan">
 			    <h3 align="center">Learn the basics</h3>
 			    <p align="center"><%= image_tag("https://s3.amazonaws.com/badgedin/images/social_basics100.png") %></p>			    
@@ -59,7 +59,7 @@
 			  </div>
 		  </div>
 		  <div class="tab-pane" id="tab3">
-		    <h2 align="center">Search Engine Optimization</h2>
+		    <h2 align="center" class="hidden-phone">Search Engine Optimization</h2>
 		      <div class="span3 hpspan">
 			    <h3 align="center">Learn the basics</h3>
 			    <p align="center"><%= image_tag("https://s3.amazonaws.com/badgedin/images/seo_basics100.png") %></p>

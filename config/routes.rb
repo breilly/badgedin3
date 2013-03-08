@@ -32,6 +32,7 @@ Badgedin3::Application.routes.draw do
   match "/privacy", to: "legal#privacy"
   match "/terms", to: "legal#terms"
   match "/about", to: "legal#about"
+  match "/tools", to: "tools#index"
   
   match "/basics_ppc/how_se_work/organic_ppc", to: "basics_ppc#howsework_organic_ppc"
   match "/basics_ppc/how_se_work/web_crawlers", to: "basics_ppc#howsework_webcrawlers" 
@@ -85,6 +86,10 @@ Badgedin3::Application.routes.draw do
   match "/basics_social/fb_timeline/part1", to: "basics_social#fbtimeline"
   match "/basics_social/fb_timeline/part2", to: "basics_social#fbtimeline2"
   match "/basics_social/fb_timeline/part3", to: "basics_social#fbtimeline3"
+  match "/basics_social/twitter_basics/part1", to: "basics_social#twitterbasics1"
+  match "/basics_social/twitter_basics/part2", to: "basics_social#twitterbasics2"
+  match "/basics_social/twitter_basics/part3", to: "basics_social#twitterbasics3"
+  match "/basics_social/twitter_basics/part4", to: "basics_social#twitterbasics4"
   
   match "/basics_ppc/how_se_work/quiz", to: "basicsquizzes_ppc#howsework_quiz"
   match "/basics_ppc/how_se_work/badge", to: "basicsquizzes_ppc#howsework_badge"
@@ -116,6 +121,8 @@ Badgedin3::Application.routes.draw do
   match "/basics_social/fb_likes/badge", to: "basicsquizzes_social#fblikes_badge"
   match "/basics_social/fb_timeline/quiz", to: "basicsquizzes_social#fbtimeline_quiz"
   match "/basics_social/fb_timeline/badge", to: "basicsquizzes_social#fbtimeline_badge"
+  match "/basics_social/twitter_basics/quiz", to: "basicsquizzes_social#twitterbasics_quiz"
+  match "/basics_social/twitter_basics/badge", to: "basicsquizzes_social#twitterbasics_badge"
   
   authenticated :user do
     root :to => 'home#index'

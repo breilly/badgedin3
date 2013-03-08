@@ -30,5 +30,17 @@ class BasicsSocialController < ApplicationController
   
   def timeline3
   end
+  
+  def twitterbasics1
+  end
+  
+  def twitterbasics2
+  end
+  
+  def twitterbasics3
+  end
+  
+  def twitterbasics4
+  end
 
 end

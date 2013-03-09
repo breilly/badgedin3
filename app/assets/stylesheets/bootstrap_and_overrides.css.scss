@@ -26,13 +26,19 @@ html,
       }
 
       /* Lastly, apply responsive CSS fixes as necessary */
-      @media (max-width: 767px) {
+      @media (max-width: 800px) {
         #footer {
           margin-left: -20px;
           margin-right: -20px;
           padding-left: 20px;
           padding-right: 20px;
         }
+        
+        .herocontain {
+  		  max-width: 660px;
+  		  margin-left: auto;
+  		  margin-right: auto;
+		}
       }
       
       @media (max-width: 480px) {
@@ -56,6 +62,16 @@ html,
           margin-right: auto;
           margin-left: auto;
         }
+        
+        .herocontain {
+  		  max-width: 260px;
+  		  margin-left: auto;
+  		  margin-right: auto;
+		}
+		
+		.btn-custom2 {
+		  font-size: 70%;
+		}
       }
 
 .navbar {

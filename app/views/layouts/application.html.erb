@@ -55,5 +55,9 @@
   })();
 
 </script>
-  </body>
+
+<% if user_signed_in? %>
+<script id="invitebox-script" type="text/javascript">(function() {    var ib = document.createElement('script');    ib.type = 'text/javascript';    ib.async = true;    ib.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'invitebox.com/invitation-camp/2412/invitebox.js?key=97f96a9f5c6b0e9f3d0df0b0b01c5062&jquery='+(typeof(jQuery)=='undefined');    var s = document.getElementsByTagName('script')[0];    s.parentNode.insertBefore(ib, s);})();</script><a id="invitebox-href" href="http://invitebox.com/widget/2412/share">Refer a friend</a>
+<% end %>
+</body>
 </html>

@@ -31,6 +31,10 @@ class RegistrationsController < Devise::RegistrationsController
     end
   end
 
+  def after_sign_up_path_for(resource)
+    welcome_path
+  end
+  
   private
   def build_resource(*args)
     super

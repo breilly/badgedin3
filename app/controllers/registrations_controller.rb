@@ -32,7 +32,8 @@ class RegistrationsController < Devise::RegistrationsController
   end
 
   def after_sign_up_path_for(resource)
-    welcome_path
+    session[:signup_modal] == true
+    welcome_silver_path
   end
   
   private

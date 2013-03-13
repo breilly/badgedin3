@@ -33,7 +33,9 @@ Badgedin3::Application.routes.draw do
   match "/terms", to: "legal#terms"
   match "/about", to: "legal#about"
   match "/tools", to: "tools#index"
-  match "/welcome", to: "welcome#index"
+  match "/welcome/silver", to: "welcome#silver"
+  match "/welcome/gold", to: "welcome#gold"
+  match "/welcome/platinum", to: "welcome#platinum"
   
   match "/basics_ppc/how_se_work/organic_ppc", to: "basics_ppc#howsework_organic_ppc"
   match "/basics_ppc/how_se_work/web_crawlers", to: "basics_ppc#howsework_webcrawlers" 

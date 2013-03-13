@@ -1,0 +1,57 @@
+<% title 'Welcome' %>
+<% description "Learn about Social Media, PPC, and SEO.  We'll help you use each of these to improve your website's performance." %>
+<% keywords 'online marketing, internet marketing, pay per click, social media, search engine optimization, ppc, seo' %>
+<script type="text/javascript">(function() {    var ibl = document.createElement('script');    ibl.type = 'text/javascript'; ibl.async = true;    ibl.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'invitebox.com/invitation-camp/2412/invitebox-landing.js?hash='+escape(window.location.hash);    var s = document.getElementsByTagName('script')[0];    s.parentNode.insertBefore(ibl, s);})();</script>
+
+<div class="container">
+  <div class="content">
+    <div class="page-header">
+    <h1>Welcome</h1>
+  </div>
+	<div class="row well-library">
+      <div class="span9">
+        <h2>Congratulations on joining BadgedIn!</h2><p class="lead"> There are a couple of things you should know about the site.</p>
+        <h3>Library</h3>
+        <p>The <%= link_to "library", library_path %> is where you'll go to access all of your training resources.  From getting caught up on the 
+        basics to some of the more advanced options.  If you're new to online marketing, we suggest starting with the Starter Kit and the Basic Videos.</p>
+        <h3>Settings</h3>
+        <p>If at anytime you want to change your profile, simply go to your <%= link_to "settings", edit_user_registration_path %> and make the change.</p>
+        <h3>Referrals</h3>
+        <p>By clicking on the "Get FREE Campaign Work!" button above you can obtain your own referral link. If you 
+        get 5 people to sign up for BadgedIn using the link, we'll help you with either PPC, Social or SEO campaign work 
+        for FREE.  It's your choice!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type='text/javascript'>//<![CDATA[ 
+$(window).load(function(){
+$('#platinumModal').modal({
+    keyboard: false
+})
+});//]]>  
+
+</script>
+
+<div id="platinumModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="platinumModalLabel" aria-hidden="true">
+	  	  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h3 id="platinumModalLabel">Welcome!</h3>
+	  	  </div>
+	  	  <div class="modal-body">
+			<h4>Congrats on joining BadgedIn!</h4>
+			<p>If there is anything we can do to help you or if you have any 
+			suggestions, please let us know.</p>
+			<p>Founder,
+			Ben Reilly</p>
+	  	  </div>
+	  	  <div class="modal-footer">
+	  	    <% if current_user.sign_in_count == 1 %>
+  			  
+  	<img src="https://shareasale.com/sale.cfm?amount=79.00&tracking=<%= current_user.id %>&transtype=sale&merchantID=46348" width="1" height="1">
+
+<% end %>
+	      </div>
+	    </div>
+

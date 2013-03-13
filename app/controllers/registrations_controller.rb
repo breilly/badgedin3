@@ -32,8 +32,14 @@ class RegistrationsController < Devise::RegistrationsController
   end
 
   def after_sign_up_path_for(resource)
-    session[:signup_modal] == true
-    welcome_silver_path
+    case current_user.roles.first.name
+      when 'silver'
+        welcome_silver_path
+      when 'gold'
+        welcome_gold_path
+      when 'platinum'
+        welcome_platinum_path
+    end
   end
   
   private

@@ -42,5 +42,14 @@ class BasicsSocialController < ApplicationController
   
   def twitterbasics4
   end
+  
+  def twittermanage_lists
+  end
+  
+  def twittermanage_search
+  end
+  
+  def twittermanage_thirdparyapps
+  end
 
 end

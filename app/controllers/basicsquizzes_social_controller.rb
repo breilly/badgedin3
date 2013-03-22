@@ -34,4 +34,11 @@ class BasicsquizzesSocialController < ApplicationController
   def twitterbasics_badge
     @badge = current_user.badges.build if signed_in?
   end
+  
+  def twittermanage_quiz
+  end
+  
+  def twittermanage_badge
+    @badge = current_user.badges.build if signed_in?
+  end
 end

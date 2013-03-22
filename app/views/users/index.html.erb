@@ -5,6 +5,19 @@
 <table class="table table-condensed">
   <thead>
     <tr>
+      <th>Number of Users</th>
+    </tr>
+  </thead>
+  <tbody>
+    <td><%= User.count('id', :distinct => true) %></td>
+  </tbody>
+</table>
+
+
+<table class="table table-condensed">
+  <thead>
+    <tr>
+      <th>User ID</th>
       <th>Username</th>
       <th>Email</th>
       <th>Registered</th>
@@ -16,6 +29,7 @@
   <tbody>
   <% @users.each do |user| %>
     <tr>
+      <td><%= user.id %></td>
       <td><%= link_to user.name, user %></td>
       <td><%= user.email %></td>
       <td><%= user.created_at.to_date %></td>

@@ -93,6 +93,9 @@ Badgedin3::Application.routes.draw do
   match "/basics_social/twitter_basics/part2", to: "basics_social#twitterbasics2"
   match "/basics_social/twitter_basics/part3", to: "basics_social#twitterbasics3"
   match "/basics_social/twitter_basics/part4", to: "basics_social#twitterbasics4"
+  match "/basics_social/twitter_management/lists", to: "basics_social#twittermanage_lists"
+  match "/basics_social/twitter_management/search", to: "basics_social#twittermanage_search"
+  match "/basics_social/twitter_management/thirdpartyapps", to: "basics_social#twittermanage_thirdpartyapps"
   
   match "/basics_ppc/how_se_work/quiz", to: "basicsquizzes_ppc#howsework_quiz"
   match "/basics_ppc/how_se_work/badge", to: "basicsquizzes_ppc#howsework_badge"
@@ -126,6 +129,8 @@ Badgedin3::Application.routes.draw do
   match "/basics_social/fb_timeline/badge", to: "basicsquizzes_social#fbtimeline_badge"
   match "/basics_social/twitter_basics/quiz", to: "basicsquizzes_social#twitterbasics_quiz"
   match "/basics_social/twitter_basics/badge", to: "basicsquizzes_social#twitterbasics_badge"
+  match "/basics_social/twitter_management/quiz", to: "basicsquizzes_social#twittermanage_quiz"
+  match "/basics_social/twitter_management/badge", to: "basicsquizzes_social#twittermanage_badge"
   
   authenticated :user do
     root :to => 'home#index'

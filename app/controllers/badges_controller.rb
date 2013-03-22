@@ -2,7 +2,7 @@ class BadgesController < ApplicationController
   # GET /badges
   # GET /badges.json
   def index
-    @badges = current_user.badges.all
+    @badges = current_user.badges.all(:order => :created_at).reverse
     #badge = Badge.find(params[:badge_id])
     #@badge = Badge.find(params[:id])
 

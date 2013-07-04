@@ -31,12 +31,5 @@ module ApplicationHelper
   def copyright_year
 	current_year = Time.new.year 
   end
-  
-  def url_for(options = nil)
-    if Hash === options
-      options[:protocol] ||= 'http'
-    end
-    super(options)
-  end
 
 end

@@ -72,7 +72,7 @@ Badgedin3::Application.configure do
   config.action_mailer.smtp_settings = {
     address: "mail.badgedin.com",
     port: 26,
-    domain: "https://www.badgedin.com",
+    domain: "http://www.badgedin.com",
     authentication: "plain",
     enable_starttls_auto: false,
     user_name: "customercare+badgedin.com",
